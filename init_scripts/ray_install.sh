@@ -1,3 +1,4 @@
+#!/bin/bash
 #RAY PORT
 RAY_PORT=9339
 
