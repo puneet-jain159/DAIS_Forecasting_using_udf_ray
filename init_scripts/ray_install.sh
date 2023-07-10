@@ -5,6 +5,7 @@ RAY_PORT=9339
 # install ray
 # Install additional ray libraries
 /databricks/python/bin/pip install ray[tune,default]==2.5.1
+/databricks/python/bin/pip install neuralprophet
 
 #Create the location if not exists
 mkdir -p /local_disk0/tmp/ray/job
