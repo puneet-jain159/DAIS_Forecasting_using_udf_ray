@@ -16,7 +16,7 @@ mkdir -p /local_disk0/tmp/ray/job
 if [ ! -z $DB_IS_DRIVER ] && [ $DB_IS_DRIVER = TRUE ] ; then
   echo "Starting the head node"
   ulimit -n 1000000
-  ray start  --head --min-worker-port=20000 --max-worker-port=25000 --temp-dir="/local_disk0/tmp/ray/job"  --port=$RAY_PORT --dashboard-port=8501 --dashboard-host="0.0.0.0" --include-dashboard=true --num-cpus=3
+  ray start  --head --min-worker-port=20000 --max-worker-port=25000 --temp-dir="/local_disk0/tmp/ray/job"  --port=$RAY_PORT --dashboard-port=8501 --dashboard-host="0.0.0.0" --include-dashboard=true --num-cpus=0 --num-gpus=0
 else
   sleep 40
   ulimit -n 1000000
