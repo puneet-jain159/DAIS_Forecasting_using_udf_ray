@@ -17,9 +17,13 @@ The current solution uses init scripts to create a ray cluster. check out the th
 
 ### Step 2. Run the preparing_walmart_m5_data notebook
 Add your Kaggle credentials to dowmload the data and convert it into delta format
-'''
+```
 KAGGLE_USERNAME
 KAGGLE_KEY
-'''
+```
 ### Step 3. Run the main notebook 
 This will trigger the process to run forecasting
+please change the following
+```
+experiment_location
+```
