@@ -5,7 +5,7 @@ RAY_PORT=9339
 # install ray
 # Install additional ray libraries
 /databricks/python/bin/pip install ray[tune,default]==2.5.1
-/databricks/python/bin/pip install neuralprophet
+/databricks/python/bin/pip install neuralprophet==0.6.0
 /databricks/python/bin/pip install protobuf==3.20.0
 
 #Create the location if not exists
